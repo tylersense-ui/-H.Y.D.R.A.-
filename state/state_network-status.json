@@ -1,0 +1,502 @@
+{
+  "timestamp": "2026-03-15T17:32:02.225Z",
+  "totalServersScanned": 70,
+  "totalServersRooted": 2,
+  "totalServersWithScripts": 1,
+  "totalServersEmpty": 43,
+  "totalRamNetwork": 2044,
+  "totalRamUsed": 3.55,
+  "ramUsagePercent": 0.17367906066536204,
+  "serversDetail": [
+    {
+      "hostname": "home",
+      "hasRoot": true,
+      "maxRam": 8,
+      "usedRam": 3.55,
+      "processCount": 1
+    },
+    {
+      "hostname": "n00dles",
+      "hasRoot": true,
+      "maxRam": 4,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "foodnstuff",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "sigma-cosmetics",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "joesguns",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "hong-fang-tea",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "harakiri-sushi",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "iron-gym",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "CSEC",
+      "hasRoot": false,
+      "maxRam": 8,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "nectar-net",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "max-hardware",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "zer0",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "neo-net",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "omega-net",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "phantasy",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "silver-helix",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "netlink",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "johnson-ortho",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "the-hub",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "computek",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "crush-fitness",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "avmnite-02h",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "I.I.I.I",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "rothman-uni",
+      "hasRoot": false,
+      "maxRam": 128,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "catalyst",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "zb-institute",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "summit-uni",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "syscore",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "rho-construction",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "alpha-ent",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "lexo-corp",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "aevum-police",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "millenium-fitness",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "global-pharm",
+      "hasRoot": false,
+      "maxRam": 8,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "snap-fitness",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "galactic-cyber",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "aerocorp",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "unitalife",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "omnia",
+      "hasRoot": false,
+      "maxRam": 32,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "deltaone",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "defcomm",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "univ-energy",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "icarus",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "solaris",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "zeus-med",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "taiyang-digital",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "zb-def",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "nova-med",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "infocomm",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "run4theh111z",
+      "hasRoot": false,
+      "maxRam": 256,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "titan-labs",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "microdyne",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "applied-energetics",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "stormtech",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "vitalife",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "fulcrumtech",
+      "hasRoot": false,
+      "maxRam": 128,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "helios",
+      "hasRoot": false,
+      "maxRam": 256,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "omnitek",
+      "hasRoot": false,
+      "maxRam": 128,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "kuai-gong",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "4sigma",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": ".",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "powerhouse-fitness",
+      "hasRoot": false,
+      "maxRam": 16,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "nwo",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "clarkinc",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "b-and-a",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "blade",
+      "hasRoot": false,
+      "maxRam": 64,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "megacorp",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "The-Cave",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "ecorp",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "fulcrumassets",
+      "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    }
+  ]
+}
