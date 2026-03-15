@@ -1,0 +1,228 @@
+# 🐍 H.Y.D.R.A. - Commandes Git
+
+## HOTFIX v0.1.1-LITE
+
+### Fichiers Modifiés
+- manifest.json (ajout telemetry-daemon-lite.js)
+- deploy-hydra.js (auto-update intégré)
+- CHANGELOG.md (documentation hotfix)
+
+### Fichiers Ajoutés
+- tools/telemetry-daemon-lite.js (version <2GB RAM)
+- SIMPLIFIED-WORKFLOW.md (documentation workflow)
+
+### Fichiers Supprimés
+- deploy-lite-fix.js (redondant, remplacé par système modulaire)
+
+---
+
+## COMMANDES GIT POUR HOTFIX
+
+```bash
+cd /path/to/HYDRA/
+
+# Vérifier les changements
+git status
+
+# Ajouter tous les fichiers modifiés/nouveaux
+git add .
+
+# Commit avec message descriptif
+git commit -m "hotfix(v0.1.1-LITE): telemetry lite for BN1.1 + auto-update deploy
+
+- Add telemetry-daemon-lite.js (<2GB RAM for early game)
+- Add auto-update to deploy-hydra.js (self-updates from GitHub)
+- Update manifest.json (10 files total)
+- Add SIMPLIFIED-WORKFLOW.md documentation
+- Update CHANGELOG.md with hotfix details
+- Remove deploy-lite-fix.js (replaced by modular system)
+
+Fixes #1: Telemetry blocked on BN1.1 with 8GB home RAM"
+
+# Push sur GitHub
+git push origin main
+```
+
+---
+
+## VÉRIFICATION POST-PUSH
+
+```bash
+# Vérifier que tout est bien poussé
+git log --oneline -5
+git status
+
+# Visiter le repo GitHub
+# https://github.com/tylersense-ui/-H.Y.D.R.A.-
+# Vérifier que les fichiers sont bien là
+```
+
+---
+
+## DÉPLOIEMENT IN-GAME (Après Push)
+
+```bash
+# Le deploy-hydra.js va auto-update puis déployer tout
+run deploy-hydra.js
+
+# Si message "DEPLOY SCRIPT UPDATED", relancer:
+run deploy-hydra.js
+
+# Lancer telemetry lite
+run /tools/telemetry-daemon-lite.js
+```
+
+---
+
+## WORKFLOW FUTUR - COMMANDES SIMPLES
+
+```bash
+cd /mnt/user-data/outputs/HYDRA
+
+# Initialiser Git
+git init
+
+# Configurer les informations de commit (si nécessaire)
+git config user.name "Your Name"
+git config user.email "your.email@example.com"
+```
+
+## ÉTAPE 2: Premier Commit
+
+```bash
+# Ajouter tous les fichiers
+git add .
+
+# Vérifier ce qui sera commité
+git status
+
+# Créer le commit initial
+git commit -m "🐍 H.Y.D.R.A. v0.1.0-GENESIS - Initial commit
+
+Phase 1: Telemetry & Monitoring
+
+Core Libraries:
+- /lib/debug.js - Multi-level DEBUG system
+- /lib/constants.js - Framework configuration
+- /lib/state-manager.js - State persistence API
+- /lib/logger.js - Centralized logging
+- /lib/capabilities.js - Player capabilities detection
+- /lib/formulas-helper.js - Formulas.exe helper
+- /lib/network.js - Network scanner (profit/s sorting)
+
+Tools:
+- /tools/telemetry-daemon.js - Real-time monitoring daemon
+- /tools/log-action.js - Operator action logger
+
+Documentation:
+- manifest.json - File tracking
+- deploy-hydra.js - GitHub deployment script
+- README.md - Complete documentation
+- CHANGELOG.md - Version history
+
+Total: 9 code files + 4 documentation files
+Status: Deployment Ready
+Next: Phase 2 - Early Batcher"
+```
+
+## ÉTAPE 3: Configuration du Remote GitHub
+
+```bash
+# Définir la branche principale
+git branch -M main
+
+# Ajouter le remote GitHub
+git remote add origin https://github.com/tylersense-ui/-H.Y.D.R.A.-.git
+
+# Vérifier le remote
+git remote -v
+```
+
+## ÉTAPE 4: Premier Push
+
+```bash
+# Pousser sur GitHub
+git push -u origin main
+```
+
+## ÉTAPE 5: Vérification
+
+```bash
+# Vérifier que tout est bien poussé
+git log --oneline
+git status
+```
+
+Ensuite, visitez: https://github.com/tylersense-ui/-H.Y.D.R.A.-
+
+---
+
+## WORKFLOW FUTUR (Pour les prochains commits)
+
+```bash
+# 1. Modifier les fichiers
+# 2. Vérifier les changements
+git status
+git diff
+
+# 3. Ajouter les fichiers modifiés
+git add .
+
+# 4. Commit avec message descriptif
+git commit -m "feat: description du changement"
+
+# 5. Push
+git push origin main
+```
+
+---
+
+## CONVENTIONS DE COMMIT
+
+Utiliser les préfixes suivants:
+
+- `feat:` - Nouvelle fonctionnalité
+- `fix:` - Correction de bug
+- `docs:` - Documentation uniquement
+- `refactor:` - Refactoring sans changement de fonctionnalité
+- `perf:` - Amélioration de performance
+- `test:` - Ajout/modification de tests
+- `chore:` - Tâches de maintenance
+
+Exemples:
+```bash
+git commit -m "feat: add FFD RAM packing algorithm"
+git commit -m "fix: telemetry daemon crash on empty server list"
+git commit -m "docs: update README with Phase 2 roadmap"
+```
+
+---
+
+## EN CAS DE PROBLÈME
+
+### Remote déjà existant
+
+```bash
+git remote remove origin
+git remote add origin https://github.com/tylersense-ui/-H.Y.D.R.A.-.git
+```
+
+### Push rejeté (force push - ATTENTION!)
+
+```bash
+# SEULEMENT si vous êtes sûr de vouloir écraser le remote
+git push -f origin main
+```
+
+### Vérifier l'état du repo
+
+```bash
+git status
+git log --oneline --graph
+git remote -v
+```
+
+---
+
+**Note**: Ces commandes doivent être exécutées dans le terminal de votre système,
+PAS dans BitBurner!

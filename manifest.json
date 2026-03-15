@@ -81,6 +81,13 @@
       "priority": 3,
       "description": "Operator action logger",
       "dependencies": ["/lib/state-manager.js", "/lib/constants.js"]
+    },
+    "/tools/telemetry-daemon-lite.js": {
+      "version": "0.1.1-LITE",
+      "status": "ready",
+      "priority": 1,
+      "description": "Telemetry daemon - LITE version for early game (<2GB RAM)",
+      "dependencies": []
     }
   },
   
@@ -147,10 +154,11 @@
   },
   
   "metadata": {
-    "total_files": 9,
-    "total_lines": "~1200",
+    "total_files": 10,
+    "total_lines": "~1400",
     "tested": false,
     "deployed": false,
-    "last_update": "2026-03-15T00:00:00.000Z"
+    "last_update": "2026-03-15T12:00:00.000Z",
+    "hotfix": "v0.1.1-LITE - Added telemetry-daemon-lite.js for BN1.1 early game"
   }
 }

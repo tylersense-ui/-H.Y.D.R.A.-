@@ -47,6 +47,53 @@ export async function main(ns) {
     ns.print("");
     
     // ══════════════════════════════════════════════════════════════
+    // 0️⃣ AUTO-UPDATE DEPLOY SCRIPT
+    // ══════════════════════════════════════════════════════════════
+    
+    ns.print("🔄 Checking for deploy script updates...");
+    const deployUrl = `${REPO_BASE}/deploy-hydra.js`;
+    const deployBackup = "/deploy-hydra-backup.js";
+    
+    try {
+        // Sauvegarder version actuelle
+        const currentScript = ns.read("/deploy-hydra.js");
+        await ns.write(deployBackup, currentScript, "w");
+        
+        // Télécharger nouvelle version
+        const updateSuccess = await ns.wget(deployUrl, "/deploy-hydra-new.js");
+        
+        if (updateSuccess) {
+            const newScript = ns.read("/deploy-hydra-new.js");
+            
+            // Vérifier si différent
+            if (currentScript !== newScript) {
+                ns.print("   ✅ New version found! Updating...");
+                await ns.write("/deploy-hydra.js", newScript, "w");
+                ns.rm("/deploy-hydra-new.js");
+                
+                ns.print("");
+                ns.print("╔═══════════════════════════════════════════════════════════╗");
+                ns.print("║   ⚠️  DEPLOY SCRIPT UPDATED                               ║");
+                ns.print("║   Please run 'run deploy-hydra.js' again                 ║");
+                ns.print("╚═══════════════════════════════════════════════════════════╝");
+                
+                ns.toast("🔄 Deploy script updated - please rerun", "warning", 5000);
+                return;
+            } else {
+                ns.print("   ✓ Already up to date");
+                ns.rm("/deploy-hydra-new.js");
+            }
+        } else {
+            ns.print("   ⚠️  Could not check for updates (continuing anyway)");
+        }
+    } catch (error) {
+        ns.print(`   ⚠️  Update check failed: ${error}`);
+        ns.print("   Continuing with current version...");
+    }
+    
+    ns.print("");
+    
+    // ══════════════════════════════════════════════════════════════
     // 1️⃣ CREATE DIRECTORY STRUCTURE
     // ══════════════════════════════════════════════════════════════
     
@@ -54,7 +101,6 @@ export async function main(ns) {
     const dirs = ["/lib", "/tools", "/state", "/workers", "/core", "/managers", "/ui"];
     
     for (const dir of dirs) {
-        // BitBurner crée automatiquement les dossiers lors de l'écriture
         ns.print(`   ✓ ${dir}`);
     }
     
