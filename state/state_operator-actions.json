@@ -7,6 +7,144 @@
       "action": "test",
       "money": 1467,
       "hackingLevel": 1
+    },
+    {
+      "timestamp": "2026-03-15T17:56:36.627Z",
+      "action": "*L'Œil de Claude est maintenant ouvert sur le jeu.*   *Le multi-headed framework est prêt à évoluer.*",
+      "money": 1467,
+      "hackingLevel": 1
+    },
+    {
+      "timestamp": "2026-03-15T18:08:47.397Z",
+      "action": "déploiement de bootstrap 🚀",
+      "money": 1467,
+      "hackingLevel": 1
+    },
+    {
+      "timestamp": "2026-03-15T18:10:35.613Z",
+      "action": "🚀 Cannot run core/bootstrap-controller.js (t=1) on home. This script requires 5.40GB of RAM.; donc je coupe la telemetry en attendant d'être a 1M > 1th Upgrade 'home' RAM",
+      "money": 1467,
+      "hackingLevel": 1
+    },
+    {
+      "timestamp": "2026-03-15T18:11:37.882Z",
+      "action": "🚀 déploiement : ╔═══════════════════════════════════════════════════════════╗ ║   🐍 H.Y.D.R.A. BOOTSTRAP CONTROLLER                      ║ ╚═══════════════════════════════════════════════════════════╝ 📊 Cycle: 1 🎯 Target: n00dles ━━━ NETWORK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🌐 Servers scanned: 70 ✅ Servers rooted: 3 🔧 Port tools: 0/5 ⚡ Active threads: 12 📡 Active servers: 3 ━━━ PLAYER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🎯 Hacking level: 1 💰 Money: $1.467k 📈 Income: $0.000/s ━━━ MILESTONES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🎯 Next level: 10 (9 to go) 💰 Next money: $100.000k ($98.533k to go) ⏳ Next update in 60s... ═════════════════════════════════════════════════════════════════",
+      "money": 13286.84391423983,
+      "hackingLevel": 2
+    },
+    {
+      "timestamp": "2026-03-15T18:14:30.040Z",
+      "action": "🚀 déploiement : ╔═══════════════════════════════════════════════════════════╗ ║   🐍 H.Y.D.R.A. AUTO-NUKE                                 ║ ╚═══════════════════════════════════════════════════════════╝ 📊 Total scanned: 70 ✅ Rooted: 4 🔓 Newly cracked: 1 ❌ Failed: 66 🔧 Port tools: 0/5 🎯 Newly cracked servers:    - sigma-cosmetics ═════════════════════════════════════════════════════════════════",
+      "money": 142254.52771569812,
+      "hackingLevel": 8
+    },
+    {
+      "timestamp": "2026-03-15T18:20:57.863Z",
+      "action": "Achat de TOR router",
+      "money": 123950.44617653138,
+      "hackingLevel": 16
+    },
+    {
+      "timestamp": "2026-03-15T18:27:53.841Z",
+      "action": "BruteSSH.exe",
+      "money": 112597.74508618377,
+      "hackingLevel": 38
+    },
+    {
+      "timestamp": "2026-03-15T18:38:25.855Z",
+      "action": "Upgrade 'home' RAM > 16GB",
+      "money": 169741.6867456272,
+      "hackingLevel": 63
+    },
+    {
+      "timestamp": "2026-03-15T18:39:06.028Z",
+      "action": "🚀 déploiement : ╔═══════════════════════════════════════════════════════════╗ ║   👁️  TELEMETRY LITE                                      ║ ╚═══════════════════════════════════════════════════════════╝ 📊 Cycle: 1 ⏰ 2026-03-15T18:38:53.311Z 🌐 Servers: 71    Rooted: 9    With scripts: 1    Empty: 43 💰 Money: $205.742k ⚡ Threads: 1 📈 Revenue: $0.000/s 🎯 Hacking: 63 📡 BitNode: BN1.1 💾 Home: 3.55/16GB 💓 Heartbeat saved (cycle 1) ⏳ Next update in 60s...",
+      "money": 205741.6867456272,
+      "hackingLevel": 63
+    },
+    {
+      "timestamp": "2026-03-15T18:44:06.771Z",
+      "action": "🚀 déploiement : ╔═══════════════════════════════════════════════════════════╗ ║   🐍 H.Y.D.R.A. BOOTSTRAP CONTROLLER                      ║ ╚═══════════════════════════════════════════════════════════╝ 📊 Cycle: 2 🎯 Target: n00dles ━━━ NETWORK ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🌐 Servers scanned: 71 ✅ Servers rooted: 10 🔧 Port tools: 1/5 ⚡ Active threads: 82 📡 Active servers: 10 ━━━ PLAYER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🎯 Hacking level: 66 💰 Money: $822.411k 📈 Income: $0.000/s ━━━ MILESTONES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🎯 Next level: 100 (34 to go) 💰 Next money: $1.000m ($177.589k to go) ⏳ Next update in 60s... ═════════════════════════════════════════════════════════════════",
+      "money": 861423.7439652461,
+      "hackingLevel": 68
+    },
+    {
+      "timestamp": "2026-03-15T18:45:25.179Z",
+      "action": "🚀 bootstrap + telemetry",
+      "money": 1223881.3799428542,
+      "hackingLevel": 69
+    },
+    {
+      "timestamp": "2026-03-15T18:48:07.072Z",
+      "action": "💰 Achat de FTPCrack.exe",
+      "money": 267773.7712788422,
+      "hackingLevel": 75
+    },
+    {
+      "timestamp": "2026-03-15T18:53:27.480Z",
+      "action": "💰 Achat de DeepscanV1.exe",
+      "money": 597573.2784271736,
+      "hackingLevel": 82
+    },
+    {
+      "timestamp": "2026-03-15T18:56:40.350Z",
+      "action": "💰 Achat de AutoLink.exe",
+      "money": 389898.8833165136,
+      "hackingLevel": 87
+    },
+    {
+      "timestamp": "2026-03-15T19:02:15.692Z",
+      "action": "💰 Achat de ServerProfiler.exe",
+      "money": 1114003.7314131174,
+      "hackingLevel": 95
+    },
+    {
+      "timestamp": "2026-03-15T19:12:40.359Z",
+      "action": "Rejoint faction Slum Snakes",
+      "money": 3958010.6845228905,
+      "hackingLevel": 106
+    },
+    {
+      "timestamp": "2026-03-15T19:13:13.257Z",
+      "action": "💰 Upgrade 'home' RAM > 32GB",
+      "money": 1019220.0782210318,
+      "hackingLevel": 107
+    },
+    {
+      "timestamp": "2026-03-15T19:24:04.374Z",
+      "action": "💰 Achat de relaySMTP.exe",
+      "money": 231220.11383797205,
+      "hackingLevel": 116
+    },
+    {
+      "timestamp": "2026-03-15T19:28:58.639Z",
+      "action": "Rejoint faction CyberSec",
+      "money": 2247220.113945502,
+      "hackingLevel": 120
+    },
+    {
+      "timestamp": "2026-03-15T19:48:01.268Z",
+      "action": "💰 Upgrade 'home' RAM > 64GB",
+      "money": 1632321.7057106683,
+      "hackingLevel": 131
+    },
+    {
+      "timestamp": "2026-03-15T21:59:03.822Z",
+      "action": "⚡ Rejoint faction Sector-12",
+      "money": 71661198.88602945,
+      "hackingLevel": 147
+    },
+    {
+      "timestamp": "2026-03-15T21:59:57.887Z",
+      "action": "💰 Achat de HTTPWorm.exe",
+      "money": 41661198.88602945,
+      "hackingLevel": 147
+    },
+    {
+      "timestamp": "2026-03-15T22:00:39.415Z",
+      "action": "💰 Upgrade 'home RAM > 128GB",
+      "money": 9799239.915980931,
+      "hackingLevel": 148
     }
   ]
 }

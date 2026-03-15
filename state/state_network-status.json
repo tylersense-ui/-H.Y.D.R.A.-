@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-15T17:32:02.225Z",
-  "totalServersScanned": 70,
-  "totalServersRooted": 2,
+  "timestamp": "2026-03-15T22:00:48.834Z",
+  "totalServersScanned": 71,
+  "totalServersRooted": 14,
   "totalServersWithScripts": 1,
   "totalServersEmpty": 43,
-  "totalRamNetwork": 2044,
-  "totalRamUsed": 3.55,
-  "ramUsagePercent": 0.17367906066536204,
+  "totalRamNetwork": 2164,
+  "totalRamUsed": 8.95,
+  "ramUsagePercent": 0.4135859519408503,
   "serversDetail": [
     {
       "hostname": "home",
       "hasRoot": true,
-      "maxRam": 8,
-      "usedRam": 3.55,
-      "processCount": 1
+      "maxRam": 128,
+      "usedRam": 8.95,
+      "processCount": 2
     },
     {
       "hostname": "n00dles",
@@ -24,77 +24,84 @@
     },
     {
       "hostname": "foodnstuff",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 16,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "sigma-cosmetics",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 16,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "joesguns",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 16,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "hong-fang-tea",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 16,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "harakiri-sushi",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 16,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "iron-gym",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 32,
       "usedRam": 0,
       "processCount": 0
     },
     {
-      "hostname": "CSEC",
+      "hostname": "darkweb",
       "hasRoot": false,
+      "maxRam": 0,
+      "usedRam": 0,
+      "processCount": 0
+    },
+    {
+      "hostname": "CSEC",
+      "hasRoot": true,
       "maxRam": 8,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "nectar-net",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 16,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "max-hardware",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 32,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "zer0",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 32,
       "usedRam": 0,
       "processCount": 0
     },
     {
       "hostname": "neo-net",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 32,
       "usedRam": 0,
       "processCount": 0
@@ -108,7 +115,7 @@
     },
     {
       "hostname": "phantasy",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 32,
       "usedRam": 0,
       "processCount": 0

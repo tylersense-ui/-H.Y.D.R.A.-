@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-03-15T17:34:02.231Z",
-  "hackingLevel": 1,
+  "timestamp": "2026-03-15T22:01:48.837Z",
+  "hackingLevel": 148,
   "currentBitNode": "BN1.1",
-  "homeRamMax": 8,
-  "homeRamUsed": 3.55,
+  "homeRamMax": 128,
+  "homeRamUsed": 8.95,
   "purchasedServers": 0
 }
