@@ -145,6 +145,12 @@
       "action": "💰 Upgrade 'home RAM > 128GB",
       "money": 9799239.915980931,
       "hackingLevel": 148
+    },
+    {
+      "timestamp": "2026-03-15T22:40:49.711Z",
+      "action": "Money earned since you last installed Augmentations  Total: $9.978m Company Work: $594.000 Crimes: $93.960m Hacking: $1.363m Servers: $-46.145m Other: $-39.200m",
+      "money": 10123239.915980931,
+      "hackingLevel": 160
     }
   ]
 }

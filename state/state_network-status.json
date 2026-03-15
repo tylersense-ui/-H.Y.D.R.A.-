@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-03-15T22:00:48.834Z",
+  "timestamp": "2026-03-15T22:54:48.751Z",
   "totalServersScanned": 71,
-  "totalServersRooted": 14,
+  "totalServersRooted": 15,
   "totalServersWithScripts": 1,
   "totalServersEmpty": 43,
   "totalRamNetwork": 2164,
@@ -122,7 +122,7 @@
     },
     {
       "hostname": "silver-helix",
-      "hasRoot": false,
+      "hasRoot": true,
       "maxRam": 64,
       "usedRam": 0,
       "processCount": 0

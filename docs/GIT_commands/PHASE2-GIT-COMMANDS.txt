@@ -1,0 +1,154 @@
+# 🐍 H.Y.D.R.A. v0.2.0-BOOTSTRAP - Commandes Git
+
+## PHASE 2: Early Game Bootstrap
+
+### Nouveaux Fichiers (6)
+- `/workers/hack.js`
+- `/workers/grow.js`
+- `/workers/weaken.js`
+- `/core/auto-nuke.js`
+- `/core/deploy-workers.js`
+- `/core/bootstrap-controller.js`
+
+### Fichiers Modifiés
+- `manifest.json` (16 fichiers total, roadmap Phase 2 complete)
+- `CHANGELOG.md` (documentation Phase 2)
+
+---
+
+## COMMANDES GIT
+
+```bash
+cd HYDRA/
+
+# Vérifier les changements
+git status
+
+# Ajouter tous les nouveaux fichiers
+git add workers/ core/ manifest.json CHANGELOG.md
+
+# Commit
+git commit -m "feat(v0.2.0-BOOTSTRAP): early game automation
+
+Phase 2: Bootstrap complete
+
+Workers (/workers/):
+- hack.js (1.7GB) - Minimaliste hack worker
+- grow.js (1.75GB) - Minimaliste grow worker  
+- weaken.js (1.75GB) - Minimaliste weaken worker
+
+Core Logic (/core/):
+- auto-nuke.js (~6GB) - BFS scan + auto-crack servers
+- deploy-workers.js (~5GB) - Copy + exec workers
+- bootstrap-controller.js (~8GB) - Orchestrate everything
+
+Strategy:
+- Simple hack loop on n00dles
+- Auto-scale across all rooted servers
+- Auto-nuke every 5 minutes
+- Milestone toasts (level 10/20/50, money $100k/$500k/$1M)
+
+Architecture:
+- Modular design (workers reusable for batcher)
+- Separation of concerns (scan/crack vs deploy)
+- /core/ for logic (not /tools/)
+
+Progression path:
+- Level 1 → 50+ (unlock more servers)
+- $0 → $5M (buy Formulas.exe later)
+- 2 servers → 50+ servers (as port tools acquired)
+
+Total files: 16 (was 10)
+Next: Phase 3 - HWGW Batcher (when Formulas.exe acquired)"
+
+# Push
+git push origin main
+```
+
+---
+
+## DÉPLOIEMENT IN-GAME
+
+```bash
+# Auto-deploy depuis GitHub
+run deploy-hydra.js
+
+# Si script updated, relancer
+run deploy-hydra.js
+
+# Vérifier déploiement
+ls /workers
+ls /core
+
+# Lancer bootstrap controller
+run /core/bootstrap-controller.js
+
+# OU avec target spécifique
+run /core/bootstrap-controller.js foodnstuff
+```
+
+---
+
+## EXPECTED BEHAVIOR
+
+**Cycle 1** (immediate):
+```
+🔓 Auto-nuke scans 70 servers
+✅ Cracks 2-5 servers (with NUKE.exe only)
+⚡ Deploys hack workers on all rooted servers
+📊 Shows real-time stats
+```
+
+**After 5 minutes** (auto-nuke again):
+```
+🔓 Re-scans network
+✅ Cracks any new accessible servers
+⚡ Re-deploys workers (kills old, starts new)
+```
+
+**Milestones** (automatic toasts):
+```
+🎯 Level 10 reached!
+💰 $100k reached!
+💡 Buy BruteSSH.exe to unlock more servers!
+```
+
+---
+
+## MONITORING
+
+**While bootstrap runs**:
+```bash
+# In another terminal, check telemetry
+run /tools/telemetry-daemon-lite.js
+
+# Check logs after 2 minutes
+cat /state/network-status.json
+cat /state/performance-metrics.json
+```
+
+**Expected progression** (1-2 hours):
+- Level: 1 → 20-30
+- Money: $1k → $500k-$1M
+- Servers rooted: 2 → 10-20 (with BruteSSH)
+- Revenue: $0/s → $50k-$200k/s
+
+---
+
+## NEXT STEPS
+
+**When to stop bootstrap**:
+- Level 50+ reached
+- $5M+ money (can buy Formulas.exe)
+- 50+ servers rooted
+
+**Then**:
+- Stop bootstrap controller
+- Buy Formulas.exe ($5B)
+- Deploy Phase 3: HWGW Batcher
+- 10x income increase
+
+---
+
+**H.Y.D.R.A. v0.2.0-BOOTSTRAP**  
+*Early game automation deployed. The grind begins.* 🐍⚡
