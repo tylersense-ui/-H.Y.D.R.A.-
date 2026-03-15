@@ -88,6 +88,48 @@
       "priority": 1,
       "description": "Telemetry daemon - LITE version for early game (<2GB RAM)",
       "dependencies": []
+    },
+    "/workers/hack.js": {
+      "version": "0.2.0-BOOTSTRAP",
+      "status": "ready",
+      "priority": 2,
+      "description": "Hack worker (minimaliste, 1.7GB)",
+      "dependencies": []
+    },
+    "/workers/grow.js": {
+      "version": "0.2.0-BOOTSTRAP",
+      "status": "ready",
+      "priority": 2,
+      "description": "Grow worker (minimaliste, 1.75GB)",
+      "dependencies": []
+    },
+    "/workers/weaken.js": {
+      "version": "0.2.0-BOOTSTRAP",
+      "status": "ready",
+      "priority": 2,
+      "description": "Weaken worker (minimaliste, 1.75GB)",
+      "dependencies": []
+    },
+    "/core/auto-nuke.js": {
+      "version": "0.2.0-BOOTSTRAP",
+      "status": "ready",
+      "priority": 1,
+      "description": "Auto-nuke: Scan BFS + crack servers",
+      "dependencies": []
+    },
+    "/core/deploy-workers.js": {
+      "version": "0.2.0-BOOTSTRAP",
+      "status": "ready",
+      "priority": 2,
+      "description": "Deploy workers: Copy + exec workers",
+      "dependencies": []
+    },
+    "/core/bootstrap-controller.js": {
+      "version": "0.2.0-BOOTSTRAP",
+      "status": "ready",
+      "priority": 3,
+      "description": "Bootstrap controller: Orchestrate auto-nuke + deploy",
+      "dependencies": ["/core/auto-nuke.js", "/core/deploy-workers.js"]
     }
   },
   
@@ -113,14 +155,16 @@
       ]
     },
     "phase2": {
-      "name": "Early Batcher",
-      "status": "PENDING",
-      "files_count": 0,
-      "objectives": [
+      "name": "Early Bootstrap",
+      "status": "COMPLETE",
+      "files_count": 6,
+      "objectives_completed": [
         "Create worker scripts (hack/grow/weaken)",
-        "Implement HWGW batcher",
-        "Auto-prep servers",
-        "First stable income"
+        "Implement auto-nuke (scan + crack)",
+        "Implement deploy-workers (copy + exec)",
+        "Create bootstrap controller (orchestration)",
+        "Simple hack loop on n00dles",
+        "Auto-scaling across all rooted servers"
       ]
     },
     "phase3": {
@@ -154,11 +198,11 @@
   },
   
   "metadata": {
-    "total_files": 10,
-    "total_lines": "~1400",
+    "total_files": 16,
+    "total_lines": "~2500",
     "tested": false,
     "deployed": false,
-    "last_update": "2026-03-15T12:00:00.000Z",
-    "hotfix": "v0.1.1-LITE - Added telemetry-daemon-lite.js for BN1.1 early game"
+    "last_update": "2026-03-15T18:00:00.000Z",
+    "current_phase": "v0.2.0-BOOTSTRAP - Early game automation deployed"
   }
 }
