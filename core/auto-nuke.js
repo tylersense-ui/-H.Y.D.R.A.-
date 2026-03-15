@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════╗
- * ║            🐍 H.Y.D.R.A. v0.2.0-BOOTSTRAP                 ║
+ * ║            🐍 H.Y.D.R.A. v0.2.1-HOTFIX                    ║
  * ║              Multi-Headed Adaptive Framework              ║
  * ╠═══════════════════════════════════════════════════════════╣
  * ║  Module: Auto-Nuke (Scan & Crack)                         ║
@@ -8,7 +8,7 @@
  * ╚═══════════════════════════════════════════════════════════╝
  * 
  * @file        /core/auto-nuke.js
- * @version     0.2.0-BOOTSTRAP
+ * @version     0.2.1-HOTFIX
  * @author      Claude (Godlike AI Operator)
  * @description Scan réseau BFS + crack avec outils disponibles
  * 
@@ -24,8 +24,12 @@
  *   - Détection auto des outils de port
  *   - Crack intelligent (skip si déjà root)
  *   - Retourne liste serveurs rootés
+ *   - Checklist visuelle des outils disponibles
  * 
  * CHANGELOG:
+ *   v0.2.1-HOTFIX (2026-03-15)
+ *     - Retirer ns.tail() (spam fenêtres quand appelé par bootstrap)
+ *     - Ajouter portTools dans return autoNuke
  *   v0.2.0-BOOTSTRAP (2026-03-15)
  *     - Création module auto-nuke
  *     - Séparation scan/crack vs deploy
@@ -156,7 +160,8 @@ export async function autoNuke(ns) {
         rooted: rooted,
         cracked: cracked,
         failed: failed,
-        portToolsCount: portTools.count
+        portToolsCount: portTools.count,
+        portTools: portTools.tools
     };
 }
 
@@ -167,7 +172,7 @@ export async function autoNuke(ns) {
 /** @param {NS} ns */
 export async function main(ns) {
     ns.disableLog("ALL");
-    ns.tail();
+    // PAS de tail - appelé périodiquement par bootstrap-controller
     
     ns.print("╔═══════════════════════════════════════════════════════════╗");
     ns.print("║   🐍 H.Y.D.R.A. AUTO-NUKE                                 ║");
@@ -181,6 +186,15 @@ export async function main(ns) {
     ns.print(`🔓 Newly cracked: ${result.cracked.length}`);
     ns.print(`❌ Failed: ${result.failed.length}`);
     ns.print(`🔧 Port tools: ${result.portToolsCount}/5`);
+    
+    // Checklist détaillée des port tools
+    ns.print("");
+    ns.print("🔐 Port Tools Checklist:");
+    ns.print(`   ${ns.fileExists("BruteSSH.exe") ? "✅" : "❌"} BruteSSH.exe`);
+    ns.print(`   ${ns.fileExists("FTPCrack.exe") ? "✅" : "❌"} FTPCrack.exe`);
+    ns.print(`   ${ns.fileExists("relaySMTP.exe") ? "✅" : "❌"} relaySMTP.exe`);
+    ns.print(`   ${ns.fileExists("HTTPWorm.exe") ? "✅" : "❌"} HTTPWorm.exe`);
+    ns.print(`   ${ns.fileExists("SQLInject.exe") ? "✅" : "❌"} SQLInject.exe`);
     ns.print("");
     
     if (result.cracked.length > 0) {

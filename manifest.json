@@ -1,7 +1,7 @@
 {
   "framework": "H.Y.D.R.A.",
   "fullName": "Hybrid Yielding Dynamic Resource Allocator",
-  "version": "0.1.0-GENESIS",
+  "version": "0.2.1-HOTFIX",
   "date": "2026-03-15",
   "author": "Claude (Godlike AI Operator)",
   "description": "Multi-Headed Adaptive Framework for BitBurner 2.8.1",
@@ -111,17 +111,17 @@
       "dependencies": []
     },
     "/core/auto-nuke.js": {
-      "version": "0.2.0-BOOTSTRAP",
+      "version": "0.2.1-HOTFIX",
       "status": "ready",
       "priority": 1,
-      "description": "Auto-nuke: Scan BFS + crack servers",
+      "description": "Auto-nuke: Scan BFS + crack servers (added port tools checklist)",
       "dependencies": []
     },
     "/core/deploy-workers.js": {
-      "version": "0.2.0-BOOTSTRAP",
+      "version": "0.2.1-HOTFIX",
       "status": "ready",
       "priority": 2,
-      "description": "Deploy workers: Copy + exec workers",
+      "description": "Deploy workers: Copy + exec workers (skips 'home', fixed standalone test)",
       "dependencies": []
     },
     "/core/bootstrap-controller.js": {
@@ -200,9 +200,9 @@
   "metadata": {
     "total_files": 16,
     "total_lines": "~2500",
-    "tested": false,
-    "deployed": false,
-    "last_update": "2026-03-15T18:00:00.000Z",
-    "current_phase": "v0.2.0-BOOTSTRAP - Early game automation deployed"
+    "tested": true,
+    "deployed": true,
+    "last_update": "2026-03-15T19:00:00.000Z",
+    "current_phase": "v0.2.1-HOTFIX - Critical architecture fixes deployed"
   }
 }

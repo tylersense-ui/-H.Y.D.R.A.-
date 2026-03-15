@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════╗
- * ║            🐍 H.Y.D.R.A. v0.2.0-BOOTSTRAP                 ║
+ * ║            🐍 H.Y.D.R.A. v0.2.1-HOTFIX                    ║
  * ║              Multi-Headed Adaptive Framework              ║
  * ╠═══════════════════════════════════════════════════════════╣
  * ║  Module: Deploy Workers (Copy & Execute)                  ║
@@ -8,7 +8,7 @@
  * ╚═══════════════════════════════════════════════════════════╝
  * 
  * @file        /core/deploy-workers.js
- * @version     0.2.0-BOOTSTRAP
+ * @version     0.2.1-HOTFIX
  * @author      Claude (Godlike AI Operator)
  * @description Copy workers + exec avec max threads
  * 
@@ -24,8 +24,12 @@
  *   - Calcul threads max disponibles
  *   - Exec avec max threads
  *   - Kill anciens process si besoin
+ *   - Skip 'home' automatiquement (respect RESERVED_HOME_RAM)
  * 
  * CHANGELOG:
+ *   v0.2.1-HOTFIX (2026-03-15)
+ *     - Skip 'home' automatique (ligne 102-104)
+ *     - Fix test standalone (pas d'import auto-nuke)
  *   v0.2.0-BOOTSTRAP (2026-03-15)
  *     - Création module deploy-workers
  *     - Séparation deploy vs nuke
@@ -98,6 +102,11 @@ export async function deployWorkers(ns, servers, target, workerType = "hack", ki
     
     for (const server of servers) {
         try {
+            // Skip 'home' pour respecter RESERVED_HOME_RAM
+            if (server === "home") {
+                continue;
+            }
+            
             // Skip serveurs sans RAM
             const maxRam = ns.getServerMaxRam(server);
             if (maxRam === 0) continue;
@@ -160,11 +169,11 @@ export async function main(ns) {
     ns.print("╚═══════════════════════════════════════════════════════════╝");
     ns.print("");
     
-    // Importer auto-nuke pour obtenir serveurs rootés
-    const { autoNuke } = await ns.run("/core/auto-nuke.js");
-    const nukeResult = await autoNuke(ns);
+    // Pour test standalone: on suppose que les serveurs sont déjà rootés
+    // Liste manuelle de serveurs de test
+    const testServers = ["home", "n00dles", "foodnstuff", "sigma-cosmetics"];
     
-    ns.print(`📊 Servers available: ${nukeResult.rooted.length}`);
+    ns.print(`📊 Using test servers: ${testServers.length}`);
     ns.print("");
     
     // Deploy hack workers sur n00dles
@@ -173,7 +182,7 @@ export async function main(ns) {
     
     ns.print(`🎯 Deploying ${workerType} workers on target: ${target}`);
     
-    const result = await deployWorkers(ns, nukeResult.rooted, target, workerType, true);
+    const result = await deployWorkers(ns, testServers, target, workerType, true);
     
     ns.print(`✅ Deployed: ${result.serversDeployed} servers`);
     ns.print(`❌ Failed: ${result.serversFailed} servers`);
