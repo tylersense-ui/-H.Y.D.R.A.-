@@ -1,0 +1,156 @@
+{
+  "framework": "H.Y.D.R.A.",
+  "fullName": "Hybrid Yielding Dynamic Resource Allocator",
+  "version": "0.1.0-GENESIS",
+  "date": "2026-03-15",
+  "author": "Claude (Godlike AI Operator)",
+  "description": "Multi-Headed Adaptive Framework for BitBurner 2.8.1",
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylersense-ui/-H.Y.D.R.A.-.git",
+    "branch": "main"
+  },
+  
+  "phase": {
+    "current": "PHASE_1_TELEMETRY",
+    "status": "DEPLOYMENT_READY",
+    "objective": "Deploy telemetry system for game state visibility"
+  },
+  
+  "files": {
+    "/lib/debug.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 1,
+      "description": "Multi-level DEBUG system",
+      "dependencies": []
+    },
+    "/lib/constants.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 1,
+      "description": "Framework configuration",
+      "dependencies": []
+    },
+    "/lib/state-manager.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 1,
+      "description": "State persistence API",
+      "dependencies": []
+    },
+    "/lib/logger.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 2,
+      "description": "Centralized logging",
+      "dependencies": ["/lib/constants.js"]
+    },
+    "/lib/capabilities.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 2,
+      "description": "Player capabilities detector",
+      "dependencies": []
+    },
+    "/lib/formulas-helper.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 2,
+      "description": "Formulas.exe helper",
+      "dependencies": []
+    },
+    "/lib/network.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 2,
+      "description": "Network scanner with profit/s sorting",
+      "dependencies": ["/lib/constants.js", "/lib/logger.js"]
+    },
+    "/tools/telemetry-daemon.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 1,
+      "description": "Real-time game state monitoring daemon",
+      "dependencies": ["/lib/state-manager.js", "/lib/constants.js", "/lib/debug.js"]
+    },
+    "/tools/log-action.js": {
+      "version": "0.1.0-GENESIS",
+      "status": "ready",
+      "priority": 3,
+      "description": "Operator action logger",
+      "dependencies": ["/lib/state-manager.js", "/lib/constants.js"]
+    }
+  },
+  
+  "directories": {
+    "/lib": "Reusable libraries and utilities",
+    "/tools": "Standalone tools and utilities",
+    "/state": "Persistent state files (auto-generated)",
+    "/workers": "Minimal worker scripts (Phase 2)",
+    "/core": "Core logic (batchers, optimizers) (Phase 2)",
+    "/managers": "Intelligent managers (Phase 3)",
+    "/ui": "Dashboard and UI (Phase 3)"
+  },
+  
+  "roadmap": {
+    "phase1": {
+      "name": "Telemetry & Monitoring",
+      "status": "COMPLETE",
+      "files_count": 9,
+      "objectives_completed": [
+        "Deploy state persistence system",
+        "Deploy telemetry daemon",
+        "Create operator action logger"
+      ]
+    },
+    "phase2": {
+      "name": "Early Batcher",
+      "status": "PENDING",
+      "files_count": 0,
+      "objectives": [
+        "Create worker scripts (hack/grow/weaken)",
+        "Implement HWGW batcher",
+        "Auto-prep servers",
+        "First stable income"
+      ]
+    },
+    "phase3": {
+      "name": "Optimization & Scale",
+      "status": "PENDING",
+      "files_count": 0,
+      "objectives": [
+        "FFD RAM packing",
+        "Dynamic EV/s optimization",
+        "Multi-target batching"
+      ]
+    }
+  },
+  
+  "deployment": {
+    "method": "GitHub Pull",
+    "script": "deploy-hydra.js",
+    "instructions": [
+      "1. Push code to GitHub",
+      "2. In-game: run deploy-hydra.js",
+      "3. Script pulls all files from repo",
+      "4. Auto-creates directory structure",
+      "5. Deploys files in dependency order"
+    ]
+  },
+  
+  "requirements": {
+    "bitburner": "2.8.1",
+    "ram_minimum": "32GB home RAM",
+    "port_tools": "0+ (autonuke will crack available servers)"
+  },
+  
+  "metadata": {
+    "total_files": 9,
+    "total_lines": "~1200",
+    "tested": false,
+    "deployed": false,
+    "last_update": "2026-03-15T00:00:00.000Z"
+  }
+}
